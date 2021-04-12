@@ -1,0 +1,2 @@
+#!/usr/bin/env
+puts 'bar-git-2'

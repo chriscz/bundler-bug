@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for i in */; do
+    if [ ! -e "$i/.git" ]; then
+        (cd $i && git init && git add . --all && git commit -m 'init')
+    fi
+done

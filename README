@@ -1,0 +1,12 @@
+## Steps to reproduce
+```
+git clone git@github.com:chriscz/bundler-bug
+make
+```
+
+## Steps to prepare for ocmmit
+```
+make clean
+git add .
+git commit -m "Your message here"
+```
