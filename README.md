@@ -18,7 +18,7 @@ bar-git-fixed INCLUDES: bar-git-fixed-1
 bar-git-fixed INCLUDES: bar-git-fixed-2
 ```
 
-This shows that the working directory when evaluating the gemspec for a gemspec is incorrect in bundler
+This shows that the working directory when evaluating the gemspec for the second gem `bar-git` is incorrect since its executables could not be found.
 
 ## Steps to prepare for ocmmit
 ```
