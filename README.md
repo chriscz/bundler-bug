@@ -45,7 +45,9 @@ After testing you should see the following:
 
 === GIT-based include [local override applied]
 ❌ FAIL: assert Bundler::StubSpecification(name="bar-git").executables.include?("bar-git-1")
+         got executables: []
 ❌ FAIL: assert Bundler::StubSpecification(name="bar-git").executables.include?("bar-git-2")
+         got executables: []
 
 === GIT-based include (with fix) [local override applied]
 ✅ PASS: assert Bundler::StubSpecification(name="bar-git-fixed").executables.include?("bar-git-fixed-1")

@@ -14,6 +14,9 @@ prepare: clean
 	(cd app && bundle config --local local.bar-git-fixed  `readlink -f ../bar-git-fixed`)
 	(cd app && bundle config --local local.bar-path       `readlink -f ../bar-path`)
 	(cd app && bundle install) > /dev/null
+	# Versions
+	(cd app && ruby --version)
+	(cd app && bundler --version)
 
 clean:
 	rm -f app/Gemfile.lock
