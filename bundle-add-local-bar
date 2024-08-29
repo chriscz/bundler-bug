@@ -1,3 +1,0 @@
-bundle config --local local.bar-git `readlink -f ../bar-git`
-bundle config --local local.bar-git-fixed `readlink -f ../bar-git-fixed`
-bundle config --local local.engine_git `readlink -f ../engine_git`
