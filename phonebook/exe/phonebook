@@ -1,0 +1,2 @@
+#!/usr/bin/env
+puts "* This is the phonebook gem's exe" 

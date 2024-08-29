@@ -1,0 +1,11 @@
+#!/bin/bash
+rm -rf phonebook/.git *.lock .bundle
+
+(cd phonebook && git init -b main && git add . --all && git commit -m 'init') > /dev/null
+
+bundle config --local local.phonebook `readlink -f phonebook`
+
+bundle exec --gemfile Gemfile.path ruby -e 'require "bundler/setup"; puts "Gemfile.path => executables: #{Bundler.definition.specs.find { |s| s.name == "phonebook" }.executables}"'
+bundle exec --gemfile Gemfile.git ruby -e  'require "bundler/setup"; puts "Gemfile.git  => executables: #{Bundler.definition.specs.find { |s| s.name == "phonebook" }.executables}"'
+
+# rm -rf phonebook/.git *.lock .bundle
