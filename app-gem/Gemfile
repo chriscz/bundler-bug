@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
-
 gem "bar-git", git: "git@github.com:chriscz/bar", branch: 'main'
 gem "bar-git-fixed", git: "git@github.com:chriscz/bar-git-fixed", branch: 'main'
 gem "bar-path", path: '../bar-path'
